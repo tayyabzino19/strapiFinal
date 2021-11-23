@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entries",
+  "info": {
+    "name": "Entry"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "ZipCode": {
+      "type": "string"
+    },
+    "HeliumHotspot": {
+      "type": "enumeration",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "Access": {
+      "type": "text"
+    },
+    "HotSpots": {
+      "type": "string"
+    },
+    "DeployIndoors": {
+      "type": "enumeration",
+      "enum": [
+        "Indoors",
+        "Outdoors"
+      ]
+    },
+    "ReservationID": {
+      "type": "string"
+    },
+    "PaymentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Paid",
+        "Refunded",
+        "Fulfiled"
+      ]
+    },
+    "UniqueIdentifier": {
+      "type": "string"
+    },
+    "OrderInline": {
+      "type": "string"
+    },
+    "AdditionalNotes": {
+      "type": "text"
+    },
+    "Batch": {
+      "type": "enumeration",
+      "enum": [
+        "Nill",
+        "Batch500"
+      ]
+    },
+    "UserID": {
+      "type": "enumeration",
+      "enum": [
+        "Nill"
+      ]
+    },
+    "EntryKey": {
+      "type": "string"
+    }
+  }
+}
